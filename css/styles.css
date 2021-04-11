@@ -130,6 +130,9 @@ address {
   border-width: 0;
   cursor: pointer;
   padding: 5px 20px;
+
+  transition: fill var(--transition-time) var(--transition-function),
+    background-color var(--transition-time) var(--transition-function);
 }
 
 .button:hover,
@@ -276,12 +279,8 @@ address {
 .navigation-item .icon {
   fill: var(--main-text-color);
   margin-right: 10px;
-  transition:
-   /* color var(--transition-time) var(--transition-function), */ fill
-      var(--transition-time) var(--transition-function),
-    /* border-color var(--transition-time) var(--transition-function), */
-      /* background-color var(--transition-time) var(--transition-function), */
-      box-shadow var(--transition-time) var(--transition-function);
+  transition: fill var(--transition-time) var(--transition-function),
+    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .navigation-item:first-child {
@@ -471,7 +470,7 @@ address {
   background-color: var(--accent-color);
 }
 
-/* Customers */
+/* Customers section*/
 .section-customers {
   padding: 94px 0;
 }
@@ -511,7 +510,7 @@ address {
   border-color: var(--accent-color);
 }
 
-/* Portfolio */
+/* Portfolio section*/
 
 .portfolio-section {
   padding: 94px 0;
@@ -585,7 +584,7 @@ address {
     box-shadow var(--transition-time) var(--transition-function);
 }
 
-/* Footer */
+/* Footer section*/
 .main-site-name-footer {
   color: var(--pure-white-color);
   margin-bottom: 20px;
@@ -667,9 +666,7 @@ address {
   left: 0;
   background-color: var(--modal-bg-color);
   opacity: 1;
-  transition: 
-  /* transform 3000ms var(--transition-function), */
-    opacity 300ms var(--transition-function),
+  transition: opacity 300ms var(--transition-function),
     background-color 300ms var(--transition-function);
 }
 
@@ -700,7 +697,6 @@ address {
   transition: transform 300ms var(--transition-function),
     opacity 300ms var(--transition-function),
     background-color 300ms var(--transition-function);
-    /* box-shadow 300ms var(--transition-function); */
 }
 
 .is-hidden .modal {
