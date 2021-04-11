@@ -88,8 +88,6 @@ address {
   color: inherit;
   transition: color var(--transition-time) var(--transition-function),
     fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
     box-shadow var(--transition-time) var(--transition-function);
 }
 
@@ -113,27 +111,11 @@ address {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .list {
   list-style: none;
   margin: 0;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--pure-white-color);
-  background-color: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .button {
@@ -148,6 +130,12 @@ address {
   border-width: 0;
   cursor: pointer;
   padding: 5px 20px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--pure-white-color);
+  background-color: var(--accent-color);
 }
 
 .container {
@@ -172,11 +160,6 @@ address {
 .header-link:hover .icon,
 .header-link:focus .icon {
   fill: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .hero {
@@ -293,11 +276,12 @@ address {
 .navigation-item .icon {
   fill: var(--main-text-color);
   margin-right: 10px;
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+  transition:
+   /* color var(--transition-time) var(--transition-function), */ fill
+      var(--transition-time) var(--transition-function),
+    /* border-color var(--transition-time) var(--transition-function), */
+      /* background-color var(--transition-time) var(--transition-function), */
+      box-shadow var(--transition-time) var(--transition-function);
 }
 
 .navigation-item:first-child {
@@ -478,20 +462,13 @@ address {
   fill: var(--social-icons-color);
   transition: color var(--transition-time) var(--transition-function),
     fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+    background-color var(--transition-time) var(--transition-function);
 }
 
 .social-icons-link:hover,
 .social-icons-link:focus {
   fill: var(--pure-white-color);
   background-color: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 /* Customers */
@@ -525,7 +502,6 @@ address {
   transition: color var(--transition-time) var(--transition-function),
     fill var(--transition-time) var(--transition-function),
     border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
     box-shadow var(--transition-time) var(--transition-function);
 }
 
@@ -533,11 +509,6 @@ address {
 .customers-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 /* Portfolio */
@@ -570,42 +541,23 @@ address {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
+  transition: transform var(--transition-time) var(--transition-function),
     box-shadow var(--transition-time) var(--transition-function);
 }
 
 .portfolio-item-example:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .portfolio-item-example:hover .portfolio-example-text {
   transform: translateY(0);
-  transition: transform var(--transition-time) var(--transition-function),
-    color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .portfolio-grid .button:hover,
 .portfolio-grid .button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
 .portfolio-example-box {
@@ -630,10 +582,6 @@ address {
 
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--transition-function),
-    color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
     box-shadow var(--transition-time) var(--transition-function);
 }
 
@@ -708,13 +656,9 @@ address {
 .social-icons-item .social-icons-link:focus {
   fill: var(--pure-white-color);
   background-color: var(--accent-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
 }
 
+/* Modal window */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -722,12 +666,21 @@ address {
   top: 0;
   left: 0;
   background-color: var(--modal-bg-color);
+  opacity: 1;
+  transition: 
+  /* transform 3000ms var(--transition-function), */
+    opacity 300ms var(--transition-function),
+    background-color 300ms var(--transition-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  background-color: var(--pure-white-color);
 }
 
 .modal {
@@ -737,18 +690,17 @@ address {
   width: 100%;
   max-width: 530px;
   min-height: 580px;
-  background: var(--pure-white-color);
+  background-color: var(--pure-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  visibility: visible;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms ease-in-out 100ms,
-    color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+  transition: transform 300ms var(--transition-function),
+    opacity 300ms var(--transition-function),
+    background-color 300ms var(--transition-function);
+    /* box-shadow 300ms var(--transition-function); */
 }
 
 .is-hidden .modal {
@@ -761,8 +713,17 @@ address {
   right: 10px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background-color: var(--pure-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
+  padding: 0;
+
+  transition: fill var(--transition-time) var(--transition-function);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:hover {
+  fill: var(--accent-color);
+  background-color: var(--pure-white-color);
 }
