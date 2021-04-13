@@ -14,7 +14,7 @@
   /* variables */
   --grid-item: 3;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-time: 250ms;
+  --transition-time: 2500ms;
 }
 
 html {
@@ -87,8 +87,7 @@ address {
   text-decoration: none;
   color: inherit;
   transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+    fill var(--transition-time) var(--transition-function);
 }
 
 .navigation .menu-item {
@@ -279,8 +278,7 @@ address {
 .navigation-item .icon {
   fill: var(--main-text-color);
   margin-right: 10px;
-  transition: fill var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+  transition: fill var(--transition-time) var(--transition-function);
 }
 
 .navigation-item:first-child {
@@ -459,8 +457,7 @@ address {
   height: 44px;
   border-radius: 50%;
   fill: var(--social-icons-color);
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
+  transition: fill var(--transition-time) var(--transition-function),
     background-color var(--transition-time) var(--transition-function);
 }
 
@@ -498,10 +495,8 @@ address {
   height: 90px;
   border: 1px solid var(--social-icons-color);
   border-radius: 4px;
-  transition: color var(--transition-time) var(--transition-function),
-    fill var(--transition-time) var(--transition-function),
-    border-color var(--transition-time) var(--transition-function),
-    box-shadow var(--transition-time) var(--transition-function);
+  transition: fill var(--transition-time) var(--transition-function),
+    border-color var(--transition-time) var(--transition-function);
 }
 
 .customers-link:hover,
@@ -511,7 +506,6 @@ address {
 }
 
 /* Portfolio section*/
-
 .portfolio-section {
   padding: 94px 0;
 }
